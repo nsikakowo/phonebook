@@ -1,38 +1,106 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section{
+  width: 600px;
+  margin: 50px auto 0;
+  background-color: #570A57 ;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+ height: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: 700;
+ font-size: 30px;
+ text-transform: uppercase;
+ background-color: #2E0249;
+ color: #A91079;
+ width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1{
+  
+  padding: 30px auto;
+}
+
+form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 90%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 30px auto;
 }
 
-.App-link {
-  color: #61dafb;
+form input{
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.btn{
+  background-color: #F806CC;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2E0249;
+  cursor: pointer;
+}
+
+table{
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.dp{
+  font-size: 16px;
+  background-color: #2E0249;
+  border-radius: 50%;
+  padding: 10px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+tr{
+  background-color: #A91079;
+}
+
+th{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2E0249;
+}
+td{
+  text-transform: capitalize;
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
 }
